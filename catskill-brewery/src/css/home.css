@@ -1,0 +1,87 @@
+.menu-icon {
+	background: url('../images/menuIcon.svg');
+}
+
+.close-icon {
+	background: url('../images/closeMenuIcon.svg');
+}
+
+.navbar {
+	text-transform: uppercase;
+}
+
+.navbar-mobile {
+	position: relative;
+}
+
+.navbar-mobile .menu-icon-div {
+	position: relative;
+	z-index: 1;
+	padding: 1em;
+}
+
+.navbar-mobile .dropdown {
+	background: #121314;
+	position: absolute;
+	overflow: hidden;
+	right: 0;
+	top: 0;
+	transition: max-height 0.6s ease;
+}
+
+.navbar-mobile .tabs {
+	margin-top: 3em;
+}
+
+.navbar-tab-button {
+	text-align: center;
+	font-weight: 700;
+	padding: 0 3em;
+}
+
+.navbar-tab-button:hover {
+	background-color: rgb(71, 71, 71, 0.2);
+}
+
+.navbar-tab-button a {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-label {
+	padding: 1em 0;
+}
+
+.navbar-desktop {
+	display: none;
+}
+
+.hero-logo {
+	text-align: center;
+	padding: 2em 0;
+}
+
+/* iPad breakpoint */
+
+@media only screen and (min-width: 1024px) {
+	.navbar-desktop {
+		display: block;
+	}
+	.navbar-mobile {
+		display: none;
+	}
+	.navbar-desktop .tabs {
+		display: flex;
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		padding: 1em 0;
+	}
+	.hero-logo {
+		padding: 5em 0;
+	}
+	.hero-logo img {
+		width: 500px;
+		height: 485px;
+	}
+}
