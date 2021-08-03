@@ -19,7 +19,6 @@ function DesktopNav({ tabs }) {
 			<div className="tabs">
 				<Tabs tabs={tabs} />
 			</div>
-			``
 		</div>
 	);
 }
@@ -59,7 +58,16 @@ function MobileNav({ tabs }) {
 				style={{ maxHeight: `${setHeight}` }}
 				className="dropdown"
 			>
-				<div className="tabs" onClick={toggle}>
+				<div
+					className="tabs"
+					style={{
+						background: `url(${navBackground})`,
+						backgroundSize: 'cover',
+						backgroundRepeat: 'no-repeat',
+						backgroundPosition: 'center',
+					}}
+					onClick={toggle}
+				>
 					<Tabs tabs={tabs} />
 				</div>
 			</div>
@@ -72,17 +80,8 @@ function Tabs({ tabs }) {
 		<>
 			{tabs.map((tab) => (
 				<div className="navbar-tab-button" key={tab.url}>
-					<div
-						style={{
-							background: `url(${navBackground})`,
-							backgroundSize: 'cover',
-							backgroundRepeat: 'no-repeat',
-							backgroundPosition: 'center',
-						}}
-					>
-						<Link to={tab.url}>
-							<div className="navbar-label">{tab.label}</div>
-						</Link>
+					<div className="navbar-label">
+						<Link to={tab.url}>{tab.label}</Link>
 					</div>
 				</div>
 			))}
