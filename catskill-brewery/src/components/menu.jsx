@@ -6,7 +6,6 @@ function Menu(props) {
 			className={props.className}
 			height={props.height}
 			width={props.width}
-			viewBox="0 0 20 20"
 		></svg>
 	);
 }
