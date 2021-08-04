@@ -1,8 +1,12 @@
 body {
 	margin: 0;
 	font-family: 'alternate-gothic-atf', sans-serif;
+	line-height: 1.5em;
 }
-
+h2 {
+	margin-top: 0px;
+	margin-bottom: 2em;
+}
 @media only screen and (min-width: 1024px) {
 	body {
 		font-family: 'sofia-pro', sans-serif;
